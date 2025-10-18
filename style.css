@@ -1,100 +1,254 @@
-html{
+html,
+body {
     font-size: 62.5%;
-    
-
-}
-body{
+    height: 100%;
     margin: 0;
-}
-header{
-    background-color: rgba(0, 0, 0, 0.9);
-    display:flex;
-    flex-direction: row;
-    height: 9em;
-    
+    padding: 0;
 }
 
-.container-logo{
-    
+.cabeçalho {
+    background-color: rgba(0, 0, 0, 0.9);
+    display: flex;
+    flex-direction: row;
+    height: 6rem;
+
+}
+
+.container-logo {
+
     width: 90vw;
     margin: 0 auto;
-    padding: 0 0 0 3em ;
+    padding: 0 0 0 5rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    
 }
 
-.lista{
+.container-logo img {
+    height: 6rem;
+}
+
+.lista {
     display: flex;
     flex-direction: row;
-    padding-right: 2em;
-    gap: 2em;
+    padding-right: 5rem;
+    margin-right: 15rem;
+    gap: 2rem;
 }
 
-.item-lista a{
+.item-lista a {
     color: rgb(206, 187, 16);
-    font-size: 1.8em;
+    font-size: 1.6rem;
     list-style-type: none;
-    padding: .8rem;
+    padding: 1rem;
     text-transform: capitalize;
     border: 2px solid rgb(206, 187, 16);
     text-decoration: none;
 }
 
-.item-lista a:hover{
-    background-color:rgb(206, 187, 16) ;
+.item-lista a:hover {
+    background-color: rgb(206, 187, 16);
     color: black;
 }
 
-.conteudo-1{
-    background-color: rgba(235, 235, 11, 0.589);
+.conteudo-1 {
+    background-color: #ebeb0b96;
+    background: linear-gradient(to top, #ebeb0b96, #ffffff);
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    width: 100vw;
-    height: 88vh;
+    width: 100%;
+    height: 90vh;
 }
 
-.titulo-link-conteudo1{
+.titulo-link-conteudo1 {
     width: 50%;
     display: flex;
     justify-content: center;
     align-items: flex-start;
     flex-direction: column;
-    gap: 1.6rem;
-    padding:0 0 0 6rem ;
+    gap: 2rem;
+    padding: 0 0 0 3rem;
+    margin-left: 5rem;
 }
 
-.container-title{
-    width: 30rem;
+.container-title {
+    width: 35rem;
+
 }
 
-.title-principal{
-    margin: 0 0 2rem 0;
-    font-size: 4rem;
+.title-principal {
+    margin: 0 0 1rem 0;
+    font-size: 5rem;
 }
 
-.saiba-mais{
+.saiba-mais {
 
-    font-size: 2rem;
+    font-size: 1.7rem;
     text-decoration: none;
     background-color: rgb(241, 241, 24);
-    padding: 1rem;
-    border-radius: 1rem;
+    padding: 2rem;
+    border-radius: 1.2rem;
     color: black;
 }
 
-span{
+span {
     text-transform: uppercase;
 }
 
-.image-conteudo1{
-    width:50%;
-    background-color: aqua;
+.image-conteudo1 {
+    width: 50%;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-start;
 }
 
-.image-conteudo1 img{
+.image-conteudo1 img {
+    height: 70rem;
+}
+
+.cursos-page {
+    height: 100vh;
+    width: 100vw;
+    background-color: aliceblue;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container-delimitador {
+    height: 90%;
+    width: 70%;
+    margin: 0 auto;
+
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+}
+
+.principais-cursos {
+    font-size: 4rem;
+    text-transform: capitalize;
+    font-weight: 700;
+    margin-bottom: 10rem;
+    padding-top: 7rem;
+
+}
+
+.container-cards-cursos {
+    height: 50%;
+    width: 85%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: row;
+    gap: 16px;
+    margin: 0;
+}
+
+.card-curso {
+    height: 40rem;
+    width: 30rem;
+    border: 1px solid rgba(0, 0, 0, 0.103);
+    border-radius: 20px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.image {
+    background-image: url(imagens/curso-design-1.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-top-right-radius: 10px;
+    width: 100%;
+    height: 50%;
+}
+
+.content-card {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    margin: 1.6rem auto;
+    align-items: flex-start;
+}
+
+.title-card {
+    font-size: 2rem;
+    font-weight: 600;
+    margin: 0 0 4rem 0;
+}
+
+.description-card {
+    font-size: 1.6rem;
+    margin: 0;
+}
+
+.outros-cursos {
+    color: rgb(0, 0, 0);
+    font-size: 1.8rem;
+    list-style-type: none;
+    padding: 1.8rem 4rem;
+    text-transform: capitalize;
+    background-color: rgb(243, 219, 7);
+    text-decoration: none;
+    border-radius: 12px;
+
+}
+
+.page-3 {
+    width: 100vw;
+    height: 80vh;
+}
+
+.container-delimitador-3 {
+    width: 100%;
+    height: 78%;
+    display: flex;
+    flex-direction: row;
+    align-self: flex-end;
+    background-color: rgba(6, 6, 138, 0.884);
+
+}
+
+.img {
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    height: 100%;
+    width: 50%;
+
+}
+
+.img img {
+    height: 80%;
+    min-width: 10rem;
+}
+
+.text-page3 {
+    height: 100%;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    margin: 4rem 0 0;
     
+    padding-left: 2rem;
+
 }
 
+.text-page3 h2 {
+    font-size: 3rem;
+    color: #ffffff;
+}
+
+.text-page3 p {
+    font-size: 1.8rem;
+    line-height: 1.6; /* melhora legibilidade */
+    max-width: 50rem; 
+    text-align: left;
+    color: #f0f0f0;
+    font-weight: 300;
+}
